@@ -1,0 +1,26 @@
+---
+import { Image } from 'astro:assets';
+import imgLogo from '../assets/logo.webp';
+---
+
+<header class="flex flex-row items-start justify-between">
+  <div class="flex w-full justify-start"></div>
+  <!-- LOGO -->
+  <div class="flex h-full w-full items-center justify-center p-3">
+    <Image
+      src={imgLogo}
+      alt="logotipo"
+      loading="eager"
+      class="h-32 object-contain"
+    />
+  </div>
+  <!-- MANTEL FLOTANTE ESQUINA -->
+  <div class="flex w-full justify-end">
+    <img
+      class="h-24 object-contain"
+      src="./images/floating-mantel.webp"
+      alt="imagen-mantel"
+      loading="eager"
+    />
+  </div>
+</header>

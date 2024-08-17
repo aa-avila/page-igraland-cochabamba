@@ -1,0 +1,21 @@
+---
+import Carousel from './Carousel.tsx';
+
+const images = [
+  './images/ph-slider-00.webp',
+  './images/ph-slider-01.webp',
+  './images/ph-slider-02.webp',
+  './images/ph-slider-03.webp',
+  './images/ph-slider-04.webp',
+  './images/ph-slider-05.webp',
+];
+---
+
+<h1>Bienvenidos</h1>
+<p class="py-4 text-lg">
+  <strong>¡Disfruta de Igraland! </strong>Lorem ipsum dolor sit amet consectetur
+  adipisicing elit. Reiciendis optio doloremque consequuntur eos porro in,
+  reprehenderit dignissimos animi exercitationem autem voluptatum rerum nobis
+  adipisci tenetur itaque nihil necessitatibus ratione! Ex!
+</p>
+<Carousel client:load images={images} />

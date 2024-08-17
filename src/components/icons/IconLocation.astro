@@ -1,0 +1,9 @@
+---
+import { Image } from 'astro:assets';
+import imgLoc from '../../assets/icon-location.webp';
+const props = Astro.props;
+---
+
+<div {...props}>
+  <Image src={imgLoc} alt="ubicacion-icono" class="size-full" />
+</div>

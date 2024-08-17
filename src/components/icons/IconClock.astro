@@ -1,0 +1,9 @@
+---
+import { Image } from 'astro:assets';
+import imgClock from '../../assets/icon-clock.webp';
+const props = Astro.props;
+---
+
+<div {...props}>
+  <Image src={imgClock} alt="reloj-icono" class="size-full" />
+</div>
