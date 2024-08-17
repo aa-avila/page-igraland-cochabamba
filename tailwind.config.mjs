@@ -16,16 +16,16 @@ export default {
         light: {
           ...require('daisyui/src/theming/themes')['light'],
           '.btn-facebook': {
-            'background-color': '#1444cc',
-            'border-color': '#1444cc',
+            'background-color': '#0049E8',
+            'border-color': '#0049E8',
           },
           '.btn-facebook:hover': {
             'background-color': '#445fd4',
             'border-color': '#445fd4',
           },
           '.btn-instagram': {
-            'background-color': '#9444ec',
-            'border-color': '#9444ec',
+            'background-color': '#D12CEC',
+            'border-color': '#D12CEC',
           },
           '.btn-instagram:hover': {
             'background-color': '#b486e8',
@@ -39,14 +39,14 @@ export default {
             'background-color': '#fc9bb4',
             'border-color': '#fc9bb4',
           },
-          primary: '#cbab63',
-          'primary-content': '#845c30',
-          secondary: '#ebd3ab',
-          'secondary-content': '#848382',
-          accent: '#bb5c04',
-          neutral: '#433722',
-          'neutral-content': '#a78e7b',
-          base: '#efa31e',
+          primary: '#18A2D9',
+          'primary-content': '#ffffff',
+          secondary: '#04BF68', // verde
+          'secondary-content': '#ffffff',
+          accent: '#F2C849', // amarillo
+          neutral: '#242424',
+          'neutral-content': '#ffffff',
+          base: '#cfd7db',
         },
       },
     ],
