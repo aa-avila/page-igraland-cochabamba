@@ -1,12 +1,12 @@
 ---
 import { Image } from 'astro:assets';
-import imgLogo from '../assets/logo.webp';
+import imgLogo from '../assets/logo-big.webp';
 ---
 
-<header class="flex flex-row items-start justify-between">
-  <div class="flex w-full justify-start"></div>
+<header class="mb-2 flex flex-row items-start justify-between">
+  <!-- <div class="flex w-full justify-start"></div> -->
   <!-- LOGO -->
-  <div class="flex h-full w-full items-center justify-center p-3">
+  <div class="flex h-full w-full items-center justify-center p-2">
     <Image
       src={imgLogo}
       alt="logotipo"
@@ -14,15 +14,14 @@ import imgLogo from '../assets/logo.webp';
       class="h-32 object-contain"
     />
   </div>
-  <!-- IMG FLOTANTE ESQUINA -->
-  <div class="flex w-full justify-end">
-    <!-- <img
+  <!-- <div class="flex w-full justify-end">
+    <img
       class="h-24 object-contain"
       src="./images/floating-mantel.webp"
       alt="imagen-mantel"
       loading="eager"
-    /> -->
-  </div>
+    />
+  </div> -->
 </header>
 
 <style>

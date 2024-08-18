@@ -39,11 +39,11 @@ export default {
             'background-color': '#fc9bb4',
             'border-color': '#fc9bb4',
           },
-          primary: '#18A2D9',
+          primary: '#18A2D9', // celeste
           'primary-content': '#ffffff',
-          secondary: '#04BF68', // verde
+          secondary: '#04bf68', // verde
           'secondary-content': '#ffffff',
-          accent: '#F2C849', // amarillo
+          accent: '#f2c849', // amarillo
           neutral: '#242424',
           'neutral-content': '#ffffff',
           base: '#cfd7db',
