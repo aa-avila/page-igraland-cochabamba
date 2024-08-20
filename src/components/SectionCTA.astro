@@ -1,25 +1,29 @@
 ---
 import ButtonNormal from './ButtonNormal.astro';
 import IconWhatsapp from './icons/IconWhatsapp.astro';
-import IconMenu from './icons/IconMenu.astro';
+import IconChat from './icons/IconChat.astro';
+import IconCalendar from './icons/IconCalendar.astro';
 import IconClock from './icons/IconClock.astro';
-import { whatsapp, catalog } from '../data/links.json';
+import { whatsapp, reservations } from '../data/links.json';
 ---
 
-<h2>Reservas y Consultas</h2>
-<div class="min-w-80 py-4">
-  <ButtonNormal link={whatsapp}>
-    <IconWhatsapp slot="icon-start" class="h-8 fill-accent" />
-    WhatsApp
-  </ButtonNormal>
-  <ButtonNormal link={catalog}>
-    <IconMenu slot="icon-start" class="h-8 stroke-accent" />
-    Menú
-  </ButtonNormal>
+<div class="flex w-full flex-col items-center justify-center">
+  <IconChat class="h-7 fill-secondary" />
+  <h2>Habla con nostoros</h2>
+  <div class="min-w-80 py-4">
+    <ButtonNormal link={whatsapp}>
+      <IconWhatsapp slot="icon-start" class="h-8 fill-accent" />
+      Consultas
+    </ButtonNormal>
+    <ButtonNormal link={reservations}>
+      <IconCalendar slot="icon-start" class="h-7 fill-accent" />
+      Reservas
+    </ButtonNormal>
+  </div>
 </div>
 
 <div class="mt-4 flex w-full flex-col items-center justify-center">
-  <IconClock class="h-7" />
+  <IconClock class="h-7 fill-secondary" />
   <h2 class="">Horarios de Atención</h2>
   <div
     class="mt-2 flex w-full flex-row items-center justify-center rounded-xl border-4 border-dashed border-accent py-4 text-xl font-semibold uppercase"
