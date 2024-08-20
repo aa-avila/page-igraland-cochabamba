@@ -28,7 +28,8 @@ import SectionSocial from '../components/SectionSocial.astro';
       <LayoutSection>
         <SectionSocial />
       </LayoutSection>
-      <div
+      <br />
+      <!-- <div
         class="img-container flex h-44 flex-row items-center justify-between py-2"
       >
         <img
@@ -43,7 +44,7 @@ import SectionSocial from '../components/SectionSocial.astro';
           alt="empanadas-foto"
           loading="lazy"
         />
-      </div>
+      </div> -->
     </div>
   </main>
   <Footer />
@@ -51,6 +52,35 @@ import SectionSocial from '../components/SectionSocial.astro';
 
 <style>
   #bgContainer {
-    background-image: url('/images/paper-3.webp');
+    /* background-image: url('/images/paper-3.webp'); */
+    /* background: linear-gradient(-30deg, #18a2d9 0%, #ffffff 78%); */
+    /* background: #18a2d9; */
+    --bgSize: 160px; /* control the size*/
+    --bgC1: #04bf68;
+    --bgC2: #f2c849;
+    --bgC3: #18a2d9;
+
+    background: conic-gradient(
+        from 15deg at 86.6%,
+        var(--bgC3) 25%,
+        var(--bgC2) 0 150deg,
+        #0000 0
+      ),
+      conic-gradient(
+        from -75deg at 50% 13.39%,
+        var(--bgC1) 60deg,
+        var(--bgC3) 0 150deg,
+        var(--bgC2) 0 210deg,
+        #0000 0
+      ),
+      conic-gradient(
+        from 15deg at 36.6% 63.4%,
+        var(--bgC1) 60deg,
+        var(--bgC3) 0 150deg,
+        var(--bgC1) 0 210deg,
+        var(--bgC2) 0 75%,
+        var(--bgC3) 0
+      );
+    background-size: var(--bgSize) var(--bgSize);
   }
 </style>

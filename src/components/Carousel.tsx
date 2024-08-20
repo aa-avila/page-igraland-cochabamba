@@ -17,6 +17,7 @@ export default ({ images }: Props) => {
       navigation
       pagination={{ clickable: true }}
       loop={true}
+      autoplay={{ delay: 5000 }}
     >
       {images.map((image, index) => (
         <SwiperSlide key={`${image}-${index}`}>
